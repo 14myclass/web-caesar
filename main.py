@@ -25,28 +25,19 @@ app.config['DEBUG'] = True
     </head>
     <body>
       <!-- create your form here -->
-     form= """
-    <!DOCTYPE html>
-    <html>
-        <body>
-            <form>
+      form= """
+        <form action method="post">
                 <label for "rot">Rotate by:</label>
                 <input  type="text" name="rot" />
                 <input type="textarea" name="text" />
                 <input type="submit" /
-            </form>
-        </body>
-    
-    
-    </html>
+            </form
+    """
 
-
-
-      """
     </body>
-</html>
-
+</html>        
+   
 
 @app.route("/")
 def index():
-    return "Hello World"
+    return form
