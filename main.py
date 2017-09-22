@@ -2,7 +2,7 @@ from flask import Flask, request, redirect
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-
+form= """
 <!DOCTYPE html>
 
 <html>
@@ -25,19 +25,20 @@ app.config['DEBUG'] = True
     </head>
     <body>
       <!-- create your form here -->
-      form= """
-        <form action method="post">
+        <form  method="post">
                 <label for "rot">Rotate by:</label>
                 <input  type="text" name="rot" />
                 <input type="textarea" name="text" />
                 <input type="submit" /
             </form
-    """
+    
 
     </body>
 </html>        
-   
+ """  
 
 @app.route("/")
 def index():
     return form
+
+app.run()
