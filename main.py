@@ -36,7 +36,7 @@ form= """
 
     </body>
 </html>        
- """  
+"""
 
 @app.route("/")
 def index():
@@ -48,8 +48,9 @@ def encrypt():
     coded_text = ""
     rot = int(request.form["rot"])
     text = request.form["text"]
-    coded_text = rotate_string(text,rot)
-return coded_text 
+     
+    
+    return rotate_string(text,rot) 
 
 
 app.run()
