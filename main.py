@@ -30,7 +30,7 @@ form= """
                 <label for "rot">Rotate by:</label>
                 <input  type="text" name="rot" />
                 <input type="textarea" name="text" />
-                <input type="submit" /
+                <input type="submit" />
             </form
     
 
@@ -50,7 +50,7 @@ def encrypt():
     text = request.form["text"]
      
     
-    return rotate_string(text,rot) 
+    return '<h1>' + rotate_string(text,rot) + '</h1>' 
 
 
 app.run()
