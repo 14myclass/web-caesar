@@ -31,8 +31,8 @@ form= """
                 <label for "rot">Rotate by:</label>
                 <input  type="text" name="rot" />
                 
-                <input type="textarea"   name="text" />
-                <textarea>{0}</textarea>
+                <textarea type="text"   name="text" >{0}</textarea>
+            
                 <input type="submit" />
             </form
     
